@@ -2,8 +2,8 @@ class Harvester < Formula
   desc "CLI tool to manage VMs on Harvester"
   homepage "https://github.com/belgaied2/harvester-cli"
   url "https://github.com/belgaied2/harvester-cli.git",
-      tag:      "v0.1.0",
-      revision: "c2962916b7e379b609c5092247ec28f0c8875a09"
+      tag:      "v0.1.1",
+      revision: "290c2f25241c235c47f3f23db1902aa095cf679b"
   license "Apache-2.0"
 
   depends_on "go" => :build
