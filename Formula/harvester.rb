@@ -9,12 +9,12 @@ class Harvester < Formula
   depends_on "go" => :build
 
   def install
-
     system "go", "build", *std_go_args(ldflags: "-s -w -X main.VERSION=#{version}")
   end
 
   test do
-    output = shell_output("#{bin}/harvester login https://localhost -t token 2>&1", 1).split("\n").pop[/msg="(.*)"/, 1]
+    outputTable = shell_output("#{bin}/harvester login https://localhost -t token 2>&1", 1).split("\n")
+    output = outputTable.pop[/msg="(.*)"/, 1]
     assert_match "invalid token", output
   end
 end
