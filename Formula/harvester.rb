@@ -14,7 +14,7 @@ class Harvester < Formula
   end
 
   test do
-    output = shell_output("#{bin}/harvester login https://localhost -t token 2>&1", 1).split("\n").pop[/msg=\"(.*)\"/, 1]
+    output = shell_output("#{bin}/harvester login https://localhost -t token 2>&1", 1).split("\n").pop[/msg="(.*)"/, 1]
     assert_match "invalid token", output
   end
 end
