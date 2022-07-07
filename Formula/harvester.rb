@@ -6,6 +6,12 @@ class Harvester < Formula
       revision: "290c2f25241c235c47f3f23db1902aa095cf679b"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/belgaied2/homebrew-harvester/releases/download/harvester-0.1.1"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, big_sur: "1d5f3f6fca5f0786d2985c32178ce89d95751d464174ffa2ad6e832bb5a94f59"
+  end
+
   depends_on "go" => :build
 
   def install
