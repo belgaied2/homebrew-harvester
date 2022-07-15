@@ -2,16 +2,9 @@ class Harvester < Formula
   desc "CLI tool to manage VMs on Harvester"
   homepage "https://github.com/belgaied2/harvester-cli"
   url "https://github.com/belgaied2/harvester-cli.git",
-      tag:      "v0.1.1",
-      revision: "290c2f25241c235c47f3f23db1902aa095cf679b"
+      tag:      "v0.1.2",
+      revision: "926218df1595d7efdc9c879d723e278f72e58fe9"
   license "Apache-2.0"
-
-  bottle do
-    root_url "https://github.com/belgaied2/homebrew-harvester/releases/download/harvester-0.1.1"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, big_sur: "1d5f3f6fca5f0786d2985c32178ce89d95751d464174ffa2ad6e832bb5a94f59"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "238b165cf31bcfd1163aac4b3612b265aa4c98e18f80a26712d553cc7c998260"
-  end
 
   depends_on "go" => :build
 
