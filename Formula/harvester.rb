@@ -8,10 +8,11 @@ class Harvester < Formula
 
   bottle do
     root_url "https://github.com/belgaied2/homebrew-harvester/releases/download/harvester-0.1.2"
-    sha256 cellar: :any_skip_relocation, monterey:     "184f0eac2476bb19f5b68a595a0dee091e42f648b598ce36693e2afa39c61431"
-    sha256 cellar: :any_skip_relocation, big_sur:      "eb01fa997acd095fb1e90b841fcc1c84267b1b9c45c250738758a7af19bbd264"
-    sha256 cellar: :any_skip_relocation, catalina:     "cde8e976b7f5b9cd7e73b7f4232507ec32edbfeb5d32d5bf034240dd2f07622d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "117b94b91266fa3bdbe6ed36349f3549f46e490d18cc3dc5fbaf66e911b86836"
+    sha256 cellar: :any_skip_relocation, arm64_monterey:  "b9f704686895527fff7b3c037e2793f145b0ee065e7c5163d4b5160a2cabaca6"
+    sha256 cellar: :any_skip_relocation, monterey:        "184f0eac2476bb19f5b68a595a0dee091e42f648b598ce36693e2afa39c61431"
+    sha256 cellar: :any_skip_relocation, big_sur:         "eb01fa997acd095fb1e90b841fcc1c84267b1b9c45c250738758a7af19bbd264"
+    sha256 cellar: :any_skip_relocation, catalina:        "cde8e976b7f5b9cd7e73b7f4232507ec32edbfeb5d32d5bf034240dd2f07622d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:    "117b94b91266fa3bdbe6ed36349f3549f46e490d18cc3dc5fbaf66e911b86836"
   end
 
   depends_on "go" => :build
